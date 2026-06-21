@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Hybrid Framework Suite">
+
+    <test name="com.chandan.parabank.testcases">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="URL" value="https://parabank.parasoft.com/parabank/index.htm;jsessionid=2FC12CDC3776C0308096F3336C8BCF9E"/>
+   
+
+        <classes>
+
+            <class name="com.chandan.parabank.testcases.TC1_Parabank_Registration"/>
+
+        </classes>
+        
+
+    </test>
+
+</suite>
