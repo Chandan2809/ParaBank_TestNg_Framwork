@@ -11,7 +11,7 @@ String dir = System.getProperty("user.dir");
 	@DataProvider(name="ParabankLoginData")
 	public String[][] AlldataProvider ()
 	{
-		String filename = dir +"\\src\\testdata\\data.xlsx";
+		String filename = dir +"\\src\\test\\resources\\testdata\\ParabankRegistraionData.xlsx";
 		int totalRowCount = ReadExcelFile.getRowCount(filename, "Sheet1");
 		int totalColCount = ReadExcelFile.getColCount(filename, "Sheet1");
 		String userData[][]= new String[totalRowCount-1][totalColCount];

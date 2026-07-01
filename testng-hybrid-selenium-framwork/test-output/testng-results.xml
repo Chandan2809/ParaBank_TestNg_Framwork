@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-21T23:44:36 IST" name="Hybrid Framework Suite" finished-at="2026-06-21T23:44:41 IST" duration-ms="4932">
+  <suite started-at="2026-07-01T20:53:36 IST" name="Hybrid Framework Suite" finished-at="2026-07-01T20:53:49 IST" duration-ms="13306">
     <groups>
     </groups>
-    <test started-at="2026-06-21T23:44:36 IST" name="com.chandan.parabank.testcases" finished-at="2026-06-21T23:44:41 IST" duration-ms="4932">
+    <test started-at="2026-07-01T20:53:36 IST" name="com.chandan.parabank.testcases" finished-at="2026-07-01T20:53:49 IST" duration-ms="13306">
       <class name="com.chandan.parabank.testcases.TC1_Parabank_Registration">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.chandan.parabank.testcases.TC1_Parabank_Registration@139982de]" started-at="2026-06-21T23:44:36 IST" name="setUp" finished-at="2026-06-21T23:44:41 IST" duration-ms="4872" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.chandan.parabank.testcases.TC1_Parabank_Registration@32115b28]" started-at="2026-07-01T20:53:36 IST" name="setUp" finished-at="2026-07-01T20:53:41 IST" duration-ms="4646" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerUser()[pri:0, instance:com.chandan.parabank.testcases.TC1_Parabank_Registration@139982de]" started-at="2026-06-21T23:44:41 IST" name="registerUser" finished-at="2026-06-21T23:44:41 IST" duration-ms="14" status="PASS">
+        <test-method signature="FirstPage001()[pri:0, instance:com.chandan.parabank.testcases.TC1_Parabank_Registration@32115b28]" started-at="2026-07-01T20:53:41 IST" name="FirstPage001" finished-at="2026-07-01T20:53:49 IST" duration-ms="8506" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chandan.parabank.testcases.TC1_Parabank_Registration@139982de]" started-at="2026-06-21T23:44:41 IST" name="tearDown" finished-at="2026-06-21T23:44:41 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- FirstPage001 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chandan.parabank.testcases.TC1_Parabank_Registration@32115b28]" started-at="2026-07-01T20:53:49 IST" name="tearDown" finished-at="2026-07-01T20:53:49 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

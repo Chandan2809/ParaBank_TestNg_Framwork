@@ -79,7 +79,12 @@
     <scope>compile</scope>
 </dependency>
 
-    
+
+    <dependency>
+    	<groupId>QA_TESTNG_HYBRID</groupId>
+    	<artifactId>QA_TESTNG_HYBRID</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
   <build>
