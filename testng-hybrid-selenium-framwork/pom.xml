@@ -70,6 +70,7 @@
         <version>5.4.1</version>
     </dependency>
     
+ 
      <!-- Allure TestNG -->
     
     <dependency>
@@ -80,11 +81,11 @@
 </dependency>
 
 
-    <dependency>
+   <!-- <dependency>
     	<groupId>QA_TESTNG_HYBRID</groupId>
     	<artifactId>QA_TESTNG_HYBRID</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
+    </dependency>-->
   </dependencies>
 
   <build>

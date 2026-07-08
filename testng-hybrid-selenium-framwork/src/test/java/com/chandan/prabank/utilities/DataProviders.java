@@ -8,10 +8,10 @@ public class DataProviders {
 	
 String dir = System.getProperty("user.dir");
 	
-	@DataProvider(name="ParabankLoginData")
+	@DataProvider(name="ParabankRegistrationData")
 	public String[][] AlldataProvider ()
 	{
-		String filename = dir +"\\src\\test\\resources\\testdata\\ParabankRegistraionData.xlsx";
+		String filename = dir +"\\src\\test\\resources\\testdata\\ParabankRegistrationData.xlsx";
 		int totalRowCount = ReadExcelFile.getRowCount(filename, "Sheet1");
 		int totalColCount = ReadExcelFile.getColCount(filename, "Sheet1");
 		String userData[][]= new String[totalRowCount-1][totalColCount];

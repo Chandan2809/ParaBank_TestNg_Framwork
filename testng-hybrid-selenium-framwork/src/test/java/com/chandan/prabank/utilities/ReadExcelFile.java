@@ -2,6 +2,7 @@ package com.chandan.prabank.utilities;
 
 import java.io.FileInputStream;
 
+
 import org.apache.poi.xssf.usermodel.*;
 
 public class ReadExcelFile {
@@ -10,19 +11,21 @@ public class ReadExcelFile {
     public static XSSFSheet excelSheet;
     public static XSSFRow row;
     public static XSSFCell cell;
-    public static String getCellValue(String fileName, String sheetName, int rowNo, int cellNo/*column no.*/)
+
+	public static String getCellValue(String fileName, String sheetName, int rowNo, int columnno)  ///*cellNo*/
     {
         try
         {
             inputStream = new FileInputStream(fileName);
             workBook = new XSSFWorkbook(inputStream);
             excelSheet =  workBook.getSheet(sheetName);
-            cell = workBook.getSheet(sheetName).getRow(rowNo).getCell(cellNo);
+            cell = workBook.getSheet(sheetName).getRow(rowNo).getCell(columnno); //cellNo (early there was "cellNo")
             workBook.close();
-            return cell.getStringCellValue();
+            return new org.apache.poi.ss.usermodel.DataFormatter().formatCellValue(cell);  //return cell.getStringCellValue(); (after replace string cell value Zip_Code was taking)
         }
         catch (Exception e)
         {
+        	  e.printStackTrace();
             return "";
         }
     }

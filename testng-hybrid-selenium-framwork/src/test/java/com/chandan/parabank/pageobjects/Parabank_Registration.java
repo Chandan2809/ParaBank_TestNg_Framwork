@@ -40,9 +40,46 @@ public class Parabank_Registration {
 	private WebElement CustomerCity;
 	
 	
+	@FindBy(xpath="//input[@id='customer.address.state']")
+	
+	private WebElement CustomerState;
 	
 	
+	@FindBy(xpath="//input[@id='customer.address.zipCode']")
 	
+	private WebElement CustomerZipCode;
+	
+	
+	 @FindBy(xpath="//input[@id='customer.phoneNumber']")
+	
+	private WebElement CustomerphoneNumber;
+	
+	
+    @FindBy(xpath="//input[@id='customer.ssn']")
+	
+	private WebElement Customerssn;
+   
+   
+	 @FindBy(xpath="//input[@id='customer.username']")
+	 
+	 private WebElement CustomerUseName;
+	 
+	 
+	 
+	 @FindBy(xpath="//input[@id='customer.password']")
+	 
+	 private WebElement CustomerPassword;
+	 
+	 
+	 
+	 @FindBy(xpath="//input[@id='repeatedPassword']")
+	 
+	 private WebElement CustomerConfirmPassword;
+	 
+	
+	 @FindBy(xpath="//input[@value='Register']")
+	 
+	 private WebElement CustomerClickOnRegistrationButton;
 	
 	
 	public void clickRegistraionLink() {
@@ -50,28 +87,72 @@ public class Parabank_Registration {
 		
 	}
 	
-	public void EnterCustomerFirstName() {
+	public void EnterCustomerFirstName(String First_Name) {
 		
-		CustomerFirstname.sendKeys("Chandan");
-		
-	}
-	
-	public void EnterCustomerLastName() {
-		
-		CustomerLastName.sendKeys("Sah");
+		CustomerFirstname.sendKeys(First_Name);
 		
 	}
 	
-	public void EnterCustomerAdress() {
+	public void EnterCustomerLastName(String Last_Name) {
 		
-		CustomerAdress.sendKeys("Nayapati");
+		CustomerLastName.sendKeys(Last_Name);
 		
 	}
 	
-	public void EnterCustomerCity() {
+	public void EnterCustomerAdress(String Address) {
 		
-		CustomerCity.sendKeys("Kolkata");
+		CustomerAdress.sendKeys(Address);
+		
 	}
+	
+	public void EnterCustomerCity(String City) {
+		
+		CustomerCity.sendKeys(City);
+	}
+	
+	public void EnterCustomerState(String State) {
+		
+		CustomerState.sendKeys(State);
+		
+	}
+	
+	public void EnterCustomerZipCode(String Zip_Code) {
+		
+		CustomerZipCode.sendKeys(Zip_Code);
+	}
+	
+	
+     public void EnterCustomerPhoneNumber(String Phone_Number) {
+		
+    	 CustomerphoneNumber.sendKeys(Phone_Number);
+		
+     }
+     
+     
+     public void EnterCustomerssn(String SSN) {
+    	 
+    	 Customerssn.sendKeys(SSN);     
+    } 
+     
+     public void EnterCustomerUserName(String Username) {
+    	 
+    	 CustomerUseName.sendKeys(Username);
+     }
+     
+     public void EnterCustomerPassword(String Password) {
+    	 
+    	 CustomerPassword.sendKeys(Password);
+     }
+     
+     public void EnterCustomerConfirmPassword(String Confirm_Password) {
+    	 
+    	 CustomerConfirmPassword.sendKeys(Confirm_Password);
+     }
+     
+     public void ClickOnRegistrationButton() {
+    	 
+    	 CustomerClickOnRegistrationButton.click();
+     }
 
 }
 
