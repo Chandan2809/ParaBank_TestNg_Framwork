@@ -77,7 +77,7 @@ public class Parabank_Registration {
 	 private WebElement CustomerConfirmPassword;
 	 
 	
-	 @FindBy(xpath="//input[@value='Register']")
+	 //@FindBy(xpath="//input[@value='Register']")
 	 
 	 private WebElement CustomerClickOnRegistrationButton;
 	
