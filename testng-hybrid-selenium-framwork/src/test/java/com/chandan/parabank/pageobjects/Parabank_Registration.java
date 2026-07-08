@@ -18,7 +18,7 @@ public class Parabank_Registration {
 		
 	}
 	
-	@FindBy(xpath="//a[normalize-space()='Register']")
+	//@FindBy(xpath="//a[normalize-space()='Register']")
 	
 	private WebElement Registration;
 	
@@ -77,7 +77,7 @@ public class Parabank_Registration {
 	 private WebElement CustomerConfirmPassword;
 	 
 	
-	 //@FindBy(xpath="//input[@value='Register']")
+	 @FindBy(xpath="//input[@value='Register']")
 	 
 	 private WebElement CustomerClickOnRegistrationButton;
 	

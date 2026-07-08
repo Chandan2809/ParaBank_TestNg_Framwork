@@ -9,7 +9,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="FirstPage001"/>
+          <include name="FirstPage001" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.chandan.parabank.testcases.TC1_Parabank_Registration -->
     </classes>
