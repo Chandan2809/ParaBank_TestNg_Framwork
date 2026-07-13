@@ -2,28 +2,54 @@ package com.chandan.parabank.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class Parabank_Login {
+import org.openqa.selenium.support.FindBy;
+//import org.openqa.selenium.support.PageFactory;
+
+import base.BasePage;
+
+
+public class Parabank_Login extends BasePage {
 	
-	WebDriver parabankLogindriver;
+	//WebDriver parabankLogindriver;
 	
-	public Parabank_Login(WebDriver rdriver) {
+	public Parabank_Login(WebDriver driver) {
 		
-		parabankLogindriver = rdriver;
+		//parabankLogindriver = rdriver;
 		
-		PageFactory.initElements(rdriver, this);
+		super(driver);
+		
+		
+		//PageFactory.initElements(rdriver, this);
 	}
 	
 	@FindBy(xpath="//input[@name='username']")
-    @CacheLookup
+   
     private WebElement username;
 
 	@FindBy(xpath="//input[@name='password']")
-	@CacheLookup
+	
 	private WebElement password;
 	
+	@FindBy(xpath="//input[@type='submit']")
+	 
+	   private WebElement Login;
+	
+	
+	
+	public void EnterUserName(String Username) {
+		
+		username.sendKeys(Username);
+	}
+	
+	public void EnterUserPassword(String Password) {
+		
+		password.sendKeys(Password);
+	}
+	
+	
+	public void ClickLoginButton() {
+		Login.click();
+	}
 	
 }

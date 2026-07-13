@@ -5,13 +5,13 @@
     <parameter name="browser" value="Chrome"/>
     <parameter name="URL" value="https://parabank.parasoft.com/parabank/index.htm;jsessionid=2FC12CDC3776C0308096F3336C8BCF9E"/>
     <classes>
-      <class name="com.chandan.parabank.testcases.TC1_Parabank_Registration">
+      <class name="com.chandan.parabank.testcases.TC3_Parabank_Open_New_Account">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="FirstPage001" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.chandan.parabank.testcases.TC1_Parabank_Registration -->
+      </class> <!-- com.chandan.parabank.testcases.TC3_Parabank_Open_New_Account -->
     </classes>
   </test> <!-- com.chandan.parabank.testcases(failed) -->
 </suite> <!-- Failed suite [Hybrid Framework Suite] -->

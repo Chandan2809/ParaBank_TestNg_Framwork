@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-08T19:23:09 IST" name="Hybrid Framework Suite" finished-at="2026-07-08T19:23:17 IST" duration-ms="7542">
+  <suite started-at="2026-07-13T18:27:01 IST" name="Hybrid Framework Suite" finished-at="2026-07-13T18:27:16 IST" duration-ms="14629">
     <groups>
     </groups>
-    <test started-at="2026-07-08T19:23:09 IST" name="com.chandan.parabank.testcases" finished-at="2026-07-08T19:23:17 IST" duration-ms="7542">
-      <class name="com.chandan.parabank.testcases.TC1_Parabank_Registration">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.chandan.parabank.testcases.TC1_Parabank_Registration@682b2fa]" started-at="2026-07-08T19:23:10 IST" name="setUp" finished-at="2026-07-08T19:23:14 IST" duration-ms="4160" status="PASS">
+    <test started-at="2026-07-13T18:27:01 IST" name="com.chandan.parabank.testcases" finished-at="2026-07-13T18:27:16 IST" duration-ms="14629">
+      <class name="com.chandan.parabank.testcases.TC3_Parabank_Open_New_Account">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.chandan.parabank.testcases.TC3_Parabank_Open_New_Account@2f67a4d3]" started-at="2026-07-13T18:27:02 IST" name="setUp" finished-at="2026-07-13T18:27:08 IST" duration-ms="5398" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FirstPage001(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.chandan.parabank.testcases.TC1_Parabank_Registration@682b2fa]" started-at="2026-07-08T19:23:14 IST" name="FirstPage001" data-provider="ParabankRegistrationData" finished-at="2026-07-08T19:23:17 IST" duration-ms="2171" status="FAIL">
+        <test-method signature="FirstPage001(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.chandan.parabank.testcases.TC3_Parabank_Open_New_Account@2f67a4d3]" started-at="2026-07-13T18:27:08 IST" name="FirstPage001" data-provider="ParabankRegistrationData" finished-at="2026-07-13T18:27:16 IST" duration-ms="7937" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -67,7 +67,7 @@
             </param>
             <param index="8">
               <value>
-                <![CDATA[ChandanKr]]>
+                <![CDATA[ChandanKrSah]]>
               </value>
             </param>
             <param index="9">
@@ -83,26 +83,26 @@
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='Registration']"}
-  (Session info: chrome=149.0.7827.201)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Open New Account']"}
+  (Session info: chrome=150.0.7871.101)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [72ddd4a1361d37f32a96779e466ba75a, findElement {value=*[name='Registration'], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\KUMARS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56824}, goog:processID: 6904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56824/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 72ddd4a1361d37f32a96779e466ba75a]]>
+Command: [d71804a87f9d86a1349dc8823a6b6051, findElement {using=xpath, value=//a[normalize-space()='Open New Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.101, chrome: {chromedriverVersion: 150.0.7871.115 (25f5b661e5b..., userDataDir: C:\Users\KUMARS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60421}, goog:processID: 7320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60421/devtoo..., se:cdpVersion: 150.0.7871.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d71804a87f9d86a1349dc8823a6b6051]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='Registration']"}
-  (Session info: chrome=149.0.7827.201)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Open New Account']"}
+  (Session info: chrome=150.0.7871.101)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [72ddd4a1361d37f32a96779e466ba75a, findElement {value=*[name='Registration'], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.201, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\KUMARS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56824}, goog:processID: 6904, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56824/devtoo..., se:cdpVersion: 149.0.7827.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 72ddd4a1361d37f32a96779e466ba75a
+Command: [d71804a87f9d86a1349dc8823a6b6051, findElement {using=xpath, value=//a[normalize-space()='Open New Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.101, chrome: {chromedriverVersion: 150.0.7871.115 (25f5b661e5b..., userDataDir: C:\Users\KUMARS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60421}, goog:processID: 7320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60421/devtoo..., se:cdpVersion: 150.0.7871.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d71804a87f9d86a1349dc8823a6b6051
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -117,18 +117,11 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.By$PreW3CLocator.findElement(By.java:430)
-at org.openqa.selenium.By$ByName.findElement(By.java:237)
-at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:49)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:81)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-at com.chandan.parabank.pageobjects.Parabank_Registration.clickRegistraionLink(Parabank_Registration.java:86)
-at com.chandan.parabank.testcases.TC1_Parabank_Registration.FirstPage001(TC1_Parabank_Registration.java:26)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at com.chandan.parabank.pageobjects.Parabank_Open_New_Account.ClickOpenNewAccount(Parabank_Open_New_Account.java:33)
+at com.chandan.parabank.testcases.TC3_Parabank_Open_New_Account.FirstPage001(TC3_Parabank_Open_New_Account.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -161,11 +154,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstPage001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.chandan.parabank.testcases.TC1_Parabank_Registration@682b2fa]" started-at="2026-07-08T19:23:17 IST" name="tearDown" finished-at="2026-07-08T19:23:17 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.chandan.parabank.testcases.TC3_Parabank_Open_New_Account@2f67a4d3]" started-at="2026-07-13T18:27:16 IST" name="tearDown" finished-at="2026-07-13T18:27:16 IST" duration-ms="119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FirstPage001 status=FAILURE method=TC3_Parabank_Open_New_Account.FirstPage001(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.chandan.parabank.testcases.TC3_Parabank_Open_New_Account@2f67a4d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.chandan.parabank.testcases.TC1_Parabank_Registration -->
+      </class> <!-- com.chandan.parabank.testcases.TC3_Parabank_Open_New_Account -->
     </test> <!-- com.chandan.parabank.testcases -->
   </suite> <!-- Hybrid Framework Suite -->
 </testng-results>

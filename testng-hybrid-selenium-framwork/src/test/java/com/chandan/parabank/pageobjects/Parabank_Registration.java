@@ -18,7 +18,7 @@ public class Parabank_Registration {
 		
 	}
 	
-	//@FindBy(xpath="//a[normalize-space()='Register']")
+	@FindBy(xpath="//a[normalize-space()='Register']")
 	
 	private WebElement Registration;
 	
