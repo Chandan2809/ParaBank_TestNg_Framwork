@@ -26,7 +26,7 @@ public class TC3_Parabank_Open_New_Account extends BaseTest {
 		  
 		  
 		  
-		  Thread.sleep(1000);
+	
 	    	Parabank_Login UserLogin = new Parabank_Login(driver);
 			Thread.sleep(1000);
 
@@ -46,14 +46,47 @@ public class TC3_Parabank_Open_New_Account extends BaseTest {
 			UserLogin.ClickLoginButton();
 			Thread.sleep(1000);
 			System.out.println("Click on Login Button");
+			
+			
+			
 		  
 		  
 		  OpenNewAccount.ClickOpenNewAccount();
 		  Thread.sleep(1000);
 		  System.out.println("Open new acount page open");
 		  
+		  OpenNewAccount.ClickAccountTypeDropDown();
+		  
+		  Thread.sleep(1000);
+		  System.out.println("Drop down list open");
 		  
 		  
-}
+		  OpenNewAccount.SelectSavingAccountType();
+		  
+		  Thread.sleep(1000);
+		  System.out.println("Select Saving type Account");
+		  
+		  
+		  OpenNewAccount.SelectSavingAccountId();
+		  Thread.sleep(1000);
+		  System.out.println("Select account ID");
+		  
+		  
+		  
+		  OpenNewAccount.ClickOnOpenSavingAccount();
+		  Thread.sleep(1000);
+		  System.out.println("Click On OpenSaving Account Button");
+		  
+		  OpenNewAccount.clickOnNewAccountLink();
+		  
+		  Thread.sleep(1000);
+		  System.out.println("Account details should be shown");
+		  
+		  
+		  OpenNewAccount.ClickOnFundTransfer();
+		  
+		  Thread.sleep(1000);
+		  System.out.println("Show fund Transfer Details");
+} 
 	  
 }
