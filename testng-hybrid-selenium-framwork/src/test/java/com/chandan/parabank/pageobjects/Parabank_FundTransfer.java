@@ -23,7 +23,7 @@ public class Parabank_FundTransfer extends Parabank_Login{
 	private WebElement EnterAmount;
 	
 	
-	//@FindBy(xpath="//input[@value='Transfer']")
+	@FindBy(xpath="//input[@value='Transfer']")
 	
 	private WebElement ClickTransferButton;
 	
